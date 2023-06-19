@@ -1,5 +1,5 @@
 ## Log API translate Ayah:Surah Quran Access User
-Endpoint : GET /api/{verse}
+Endpoint : GET /api/logs
 
 Request Header :
 
