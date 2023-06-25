@@ -17,7 +17,7 @@ This project is a simple example Spring Boot Restful API application that can be
 Before running this project, make sure you have the following prerequisites:
 
 - Java 17: [Download Java 17](https://www.oracle.com/java/technologies/javase-jdk17-downloads.html)
-- Maven 3.0.9: [Download Maven 3.9.2](https://maven.apache.org/download.cgi)
+- Maven 3.9.2: [Download Maven 3.9.2](https://maven.apache.org/download.cgi)
 - MySQL 
 
 ## Installation
