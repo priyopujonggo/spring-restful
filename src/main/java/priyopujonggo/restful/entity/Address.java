@@ -1,14 +1,10 @@
 package priyopujonggo.restful.entity;
 
-
-import java.util.List;
-
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
-import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -20,27 +16,25 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "contacts")
-public class Contact {
+@Table(name = "addresses")
+public class Address {
 
     @Id
     private String id;
 
-    @Column(name = "first_name")
-    private String firstName;
+    private String street;
 
-    @Column(name = "last_name")
-    private String lastName;
+    private String city;
 
-    private String phone;
+    private String province;
 
-    private String email;
+    private String country;
+
+    @Column(name = "postal_code")
+    private String postalCode;
 
     @ManyToOne
-    @JoinColumn(name = "username", referencedColumnName = "email")
-    private User user;
-
-    @OneToMany(mappedBy = "contact")
-    private List<Address> addresses;
+    @JoinColumn(name = "contact_id", referencedColumnName = "id")
+    private Contact contact;
     
 }
