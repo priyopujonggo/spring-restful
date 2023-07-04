@@ -56,6 +56,25 @@ SELECT * FROM addresses;
 
 DESC addresses;
 
+CREATE TABLE questions
+(
+    id               VARCHAR(100) NOT NULL,
+    category         VARCHAR(100),
+    difficulty_level VARCHAR(100),
+    option1          VARCHAR(200),
+    option2          VARCHAR(200),
+    option3          VARCHAR(200),
+    option4          VARCHAR(200),
+    question_title   VARCHAR(200),
+    right_answer     VARCHAR(200),
+    PRIMARY KEY (id)
+) ENGINE InnoDB;
+
+SELECT * FROM questions;
+DESC questions;
+
+DELETE FROM questions;
+
 DELETE FROM addresses;
 
 DELETE FROM contacts;
